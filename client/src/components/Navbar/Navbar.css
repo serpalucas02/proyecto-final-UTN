@@ -1,0 +1,211 @@
+nav {
+  background: #222;
+  padding: 0 15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.logo {
+  font-size: 20px;
+  padding: 7.5px 10px 7.5px 0;
+}
+
+.logo img {
+  width: 180px;
+}
+
+.toggle img {
+  width: 45px;
+}
+
+.item {
+  padding: 10px;
+}
+
+.item a:hover {
+  color: #ccc;
+}
+
+.rgbar {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 0, 255, 1) 18%,
+    rgba(0, 0, 255, 1) 30%,
+    rgba(0, 240, 255, 1) 45%,
+    rgba(0, 255, 0, 1) 63%,
+    rgba(255, 255, 0, 1) 80%,
+    rgba(255, 120, 0, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  height: 3px;
+  position: relative;
+}
+
+/* Mobile */
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+
+.toggle {
+  cursor: pointer;
+  order: 1;
+  font-size: 20px;
+}
+
+.item {
+  order: 2;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.active .item.button {
+  order: 3;
+  border-top: 1px #444 solid;
+}
+
+.item.carrito {
+  order: 4;
+}
+
+.active .item {
+  display: block;
+}
+
+.logout {
+  color: white;
+  cursor: pointer;
+  padding: 15px 5px;
+}
+
+.logout:hover {
+  color: #ccc;
+}
+
+.btn-more-less {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.btn-more-less button:first-child {
+  background-color: green;
+  color: white;
+}
+
+.btn-more-less button:last-child {
+  background-color: red;
+  color: white;
+}
+
+.td-btn button {
+  padding: 0 1rem;
+  border-radius: 25px;
+  border: none;
+}
+
+.table {
+  text-align: center;
+}
+
+.btn-eliminar {
+  margin-top: 0.5rem;
+  background-color: black;
+  color: white;
+}
+
+.carrito,
+.cart-badge,
+.user-icon {
+  display: none;
+}
+
+.text-carrito {
+  display: block;
+  color: white;
+  padding: 15px 5px;
+}
+
+/* Desktop */
+@media (min-width: 960px) {
+  .item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+
+  .button {
+    order: 2;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .carrito,
+  .cart-badge,
+  .user-icon {
+    display: block;
+  }
+
+  .carrito {
+    color: #fff;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .cart-badge {
+    position: absolute;
+    top: -10px;
+    right: -2px;
+  }
+
+  .text-carrito {
+    display: none;
+  }
+
+  .user-icon {
+    color: #fff;
+    height: 1.5rem;
+    margin-right: 0.2rem;
+  }
+
+  .item.button a{
+    display: flex;
+    gap: 0.2rem;
+  }
+
+  .logout-icon-text{
+    display: flex;
+    align-items: center;
+  }
+}

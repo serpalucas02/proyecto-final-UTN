@@ -1,0 +1,34 @@
+#btn-modals{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    min-width: 150px;
+}
+#table-row{
+    width: fit-content;
+    padding: 0;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.title-admin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.btn-add{
+    height: 2.5rem;
+}
+.label-select{
+    margin-right: .5rem;
+}
+.btn-si-no{
+    width: 150px;
+}
+.buttons-confirm{
+    display: flex;
+    justify-content: space-around;
+}

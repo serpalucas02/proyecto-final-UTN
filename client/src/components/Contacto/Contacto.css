@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Poppins&display=swap');
+
+form{
+    font-family: 'Poppins';
+}
+.container-form{
+    max-width: 430px;
+    margin: 30px auto;
+    padding: 20px;
+}
+.form-wrap{
+    background: #fff;
+    padding: 15px 25px;
+    color: #333;
+    border-top: 4px solid #333;
+    border-radius: 5px;
+}
+.form-wrap h1{
+    text-align: center;
+}
+.form-wrap .form-group{
+    margin-top: 15px;
+}
+.form-wrap .form-group label{
+    display: block;
+    color: #666;
+}
+.form-wrap .form-group input{
+    width: 100%;
+    padding: 10px;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+}
+.form-wrap button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #333;
+    font-size: 15px;
+    transition: 1s;
+}
+.form-wrap button:hover{
+    background-color: black;
+    transition: 1s;
+}
+.form-group textarea{
+    width: 100%;
+    resize: none;
+    height: 100px;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+}

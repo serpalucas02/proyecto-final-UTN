@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Poppins&display=swap');
+
+form{
+    font-family: 'Poppins';
+}
+.container-login{
+    max-width: 430px;
+    margin: 30px auto;
+    padding: 20px;
+}
+.login-wrap{
+    background: #fff;
+    padding: 15px 25px;
+    color: #333;
+    border-top: 4px solid #333;
+    border-radius: 5px;
+}
+.login-wrap h1{
+    text-align: center;
+}
+.login-wrap .login-group{
+    margin-top: 15px;
+}
+.login-wrap .login-group label{
+    display: block;
+    color: #666;
+}
+.login-wrap .login-group input{
+    width: 100%;
+    padding: 10px;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+}
+.login-wrap button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #333;
+    font-size: 15px;
+    transition: 1s;
+}
+.login-wrap button:hover{
+    background-color: black;
+    transition: 1s;
+}
+.footer-inicioSesion{
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+}
+.footer-inicioSesion a{
+    color: black;
+}
+.error-message{
+    padding-top: 1rem;
+    color: red;
+}
