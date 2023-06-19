@@ -1,15 +1,32 @@
 import React, { useEffect, useState } from "react";
 import "./ProductosDestacados.css";
 import Card from "../ListaProductos/Card";
-import Carousel from "react-elastic-carousel";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function ProductosDestacados() {
-  const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 2 },
-    { width: 768, itemsToShow: 3 },
-    { width: 1200, itemsToShow: 3 },
-  ];
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 960,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 620,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
   const [productos, setProductos] = useState([]);
 
@@ -31,7 +48,7 @@ function ProductosDestacados() {
     <div>
       <h3 className="tituloPD">Productos Destacados</h3>
       <div className="contenedorPD">
-        <Carousel breakPoints={breakPoints}>
+        <Slider {...settings}>
           {productos
             .filter((producto) => producto.outstanding === true)
             .map((productoFiltrado) => (
@@ -43,7 +60,7 @@ function ProductosDestacados() {
                 precio={productoFiltrado.price}
               />
             ))}
-        </Carousel>
+        </Slider>
       </div>
     </div>
   );

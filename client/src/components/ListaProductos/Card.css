@@ -8,9 +8,8 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
     margin: 0;
+    width: 220px;
 }
 .carta{
     background-color: white;
@@ -43,7 +42,7 @@ h3{
     bottom: 20px;
     padding: 5px;
     border-radius: 1rem;
-    width: 50%;
+    width: 110px;
     border: 2px solid white;
     font-family: 'Inter', sans-serif;
     color: white;
